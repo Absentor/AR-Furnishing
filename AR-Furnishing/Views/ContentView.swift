@@ -31,13 +31,15 @@ struct ContentView: View {
     }()
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            ARViewContainer(modelConfirmedForPlacement: $modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
-            
-            if modelPlacementEnabled {
-                PlacementButtonsView(modelPlacementEnabled: $modelPlacementEnabled, selectedModel: $selectedModel, modelConfirmedForPlacement: $modelConfirmedForPlacement)
-            } else {
-                ModelPickerView(modelPlacementEnabled: $modelPlacementEnabled, selectedModel: $selectedModel, models: models)
+        NavigationView {
+            ZStack(alignment: .bottom) {
+                ARViewContainer(selectedModel: $selectedModel, modelConfirmedForPlacement: $modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
+                
+                if modelPlacementEnabled {
+                    PlacementButtonsView(modelPlacementEnabled: $modelPlacementEnabled, selectedModel: $selectedModel, modelConfirmedForPlacement: $modelConfirmedForPlacement)
+                } else {
+                    ModelPickerView(modelPlacementEnabled: $modelPlacementEnabled, selectedModel: $selectedModel, models: models)
+                }
             }
         }
     }
@@ -50,27 +52,42 @@ struct ModelPickerView: View {
     var models: [Model]
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 6) {
-                ForEach(0 ..< models.count) { index in
-                    Button(action: {
-                        selectedModel = models[index]
-                        
-                        modelPlacementEnabled = true
-                    }) {
-                        Image(uiImage: models[index].thumbnail)
-                            .resizable()
-                            .frame(height: 64)
-                            .aspectRatio(1/1, contentMode: .fit)
-                            .background(Color.white)
-                            .cornerRadius(12)
-                    }
-                    .buttonStyle(PlainButtonStyle())
+        VStack {
+            HStack {
+                Spacer()
+                NavigationLink(destination: ExportView()) {
+                    Text("Export")
+                        .font(.body)
+                        .foregroundColor(Color.white)
+                        .padding(6)
                 }
+                .background(Color.black.opacity(0.5))
+                .cornerRadius(12)
+                .padding(6)
             }
-            .padding(12)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 6) {
+                    ForEach(0 ..< models.count) { index in
+                        Button(action: {
+                            selectedModel = models[index]
+                            
+                            modelPlacementEnabled = true
+                        }) {
+                            Image(uiImage: models[index].thumbnail)
+                                .resizable()
+                                .frame(height: 64)
+                                .aspectRatio(1/1, contentMode: .fit)
+                                .background(Color.white)
+                                .cornerRadius(12)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
+                }
+                .padding(12)
+            }
+            .background(Color.black.opacity(0.5))
         }
-        .background(Color.black.opacity(0.5))
     }
 }
 

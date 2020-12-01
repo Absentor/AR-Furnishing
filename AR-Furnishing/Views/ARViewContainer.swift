@@ -10,15 +10,23 @@ import RealityKit
 import ARKit
 
 struct ARViewContainer: UIViewRepresentable {
+    @Binding var selectedModel: Model?
     @Binding var modelConfirmedForPlacement: Model?
-
-    func makeUIView(context: Context) -> ARView {
-        let arView = ARView(frame: .zero, cameraMode: .ar, automaticallyConfigureSession: true)
+    
+    func makeUIView(context: Context) -> PreviewARView {
+        let arView = PreviewARView(frame: .zero, cameraMode: .ar, automaticallyConfigureSession: true)
         
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = .horizontal
         config.environmentTexturing = .automatic
         
+        let previewAnchor = AnchorEntity(plane: .horizontal)
+        previewAnchor.name = "PreviewAnchor"
+        
+        arView.scene.addAnchor(previewAnchor)
+        arView.previewAnchor = previewAnchor
+        
+        arView.session.delegate = arView
         arView.session.run(config)
         
         arView.enableObjectRemoval()
@@ -26,7 +34,13 @@ struct ARViewContainer: UIViewRepresentable {
         return arView
     }
 
-    func updateUIView(_ uiView: ARView, context: Context) {
+    func updateUIView(_ uiView: PreviewARView, context: Context) {
+        if let model = selectedModel, let modelEntity = model.entity?.clone(recursive: true) {
+            uiView.previewAnchor?.addChild(modelEntity)
+        } else {
+            uiView.previewAnchor?.children.removeAll()
+        }
+        
         if let model = modelConfirmedForPlacement {
             if let modelEntity = model.entity?.clone(recursive: true) {
                 DispatchQueue.main.async {

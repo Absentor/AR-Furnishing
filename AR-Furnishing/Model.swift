@@ -23,7 +23,12 @@ class Model {
         let filename = name + ".usdz"
         self.cancellable = ModelEntity.loadModelAsync(named: filename)
             .sink(receiveCompletion: { loadCompletion in
-                print("Unable to load model entity for \(name)")
+                switch loadCompletion {
+                case .finished: break
+                case .failure(let error):
+                    print("Unable to load model entity for \(name). Error: \(error.localizedDescription)")
+                }
+                
             }, receiveValue: { modelEntity in
                 self.entity = modelEntity
                 self.entity?.generateCollisionShapes(recursive: true)

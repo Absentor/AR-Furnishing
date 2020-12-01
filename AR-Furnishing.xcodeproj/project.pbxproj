@@ -19,6 +19,8 @@
 		DC61A3B325767214000531EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3B225767214000531EC /* Model.swift */; };
 		DC61A3BF25768369000531EC /* ARViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3BE25768369000531EC /* ARViewExtension.swift */; };
 		DC61A3C6257686F2000531EC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3C5257686F2000531EC /* ARViewContainer.swift */; };
+		DC61A3CB2576C3B5000531EC /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3CA2576C3B5000531EC /* ExportView.swift */; };
+		DC61A40F2576D5D6000531EC /* PreviewARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A40E2576D5D6000531EC /* PreviewARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DC61A3B225767214000531EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DC61A3BE25768369000531EC /* ARViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewExtension.swift; sourceTree = "<group>"; };
 		DC61A3C5257686F2000531EC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		DC61A3CA2576C3B5000531EC /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		DC61A40E2576D5D6000531EC /* PreviewARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				DC61A3A225766213000531EC /* ContentView.swift */,
+				DC61A3CA2576C3B5000531EC /* ExportView.swift */,
 				DC61A3C5257686F2000531EC /* ARViewContainer.swift */,
+				DC61A40E2576D5D6000531EC /* PreviewARView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,11 +142,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					D84306171FDCD417005FCEAB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -187,7 +194,9 @@
 			files = (
 				DC61A3A325766213000531EC /* ContentView.swift in Sources */,
 				DC61A3BF25768369000531EC /* ARViewExtension.swift in Sources */,
+				DC61A3CB2576C3B5000531EC /* ExportView.swift in Sources */,
 				DC61A3B325767214000531EC /* Model.swift in Sources */,
+				DC61A40F2576D5D6000531EC /* PreviewARView.swift in Sources */,
 				D843061C1FDCD417005FCEAB /* AppDelegate.swift in Sources */,
 				DC61A3C6257686F2000531EC /* ARViewContainer.swift in Sources */,
 			);
@@ -221,6 +230,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -228,8 +238,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -278,6 +290,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -285,8 +298,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -325,7 +340,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "absentor.arkit-furnishing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -341,7 +356,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "absentor.arkit-furnishing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
