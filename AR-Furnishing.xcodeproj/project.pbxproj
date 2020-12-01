@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D57FA1DE25727F51001CF5D1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57FA1DD25727F51001CF5D1 /* Utilities.swift */; };
 		D843061C1FDCD417005FCEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843061B1FDCD417005FCEAB /* AppDelegate.swift */; };
-		D843061E1FDCD417005FCEAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843061D1FDCD417005FCEAB /* ViewController.swift */; };
-		D84306211FDCD417005FCEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D843061F1FDCD417005FCEAB /* Main.storyboard */; };
 		D84306231FDCD417005FCEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84306221FDCD417005FCEAB /* Assets.xcassets */; };
 		D84306261FDCD417005FCEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84306241FDCD417005FCEAB /* LaunchScreen.storyboard */; };
-		D843062E1FDCDF23005FCEAB /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843062D1FDCDF23005FCEAB /* itemCell.swift */; };
-		D84306301FDCE9C4005FCEAB /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D843062F1FDCE9C4005FCEAB /* Models.scnassets */; };
+		DC61A3A325766213000531EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3A225766213000531EC /* ContentView.swift */; };
+		DC61A3AC25766740000531EC /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3A72576673E000531EC /* chair_swan.usdz */; };
+		DC61A3AD25766740000531EC /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3A82576673E000531EC /* cup_saucer_set.usdz */; };
+		DC61A3AE25766740000531EC /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3A92576673F000531EC /* fender_stratocaster.usdz */; };
+		DC61A3AF25766740000531EC /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3AA2576673F000531EC /* flower_tulip.usdz */; };
+		DC61A3B025766740000531EC /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3AB25766740000531EC /* tv_retro.usdz */; };
+		DC61A3B325767214000531EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3B225767214000531EC /* Model.swift */; };
+		DC61A3BF25768369000531EC /* ARViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3BE25768369000531EC /* ARViewExtension.swift */; };
+		DC61A3C6257686F2000531EC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3C5257686F2000531EC /* ARViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D57FA1DD25727F51001CF5D1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D84306181FDCD417005FCEAB /* AR-Furnishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Furnishing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D843061B1FDCD417005FCEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D843061D1FDCD417005FCEAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D84306201FDCD417005FCEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D84306221FDCD417005FCEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84306251FDCD417005FCEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84306271FDCD417005FCEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D843062D1FDCDF23005FCEAB /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
-		D843062F1FDCE9C4005FCEAB /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		DC61A3A225766213000531EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC61A3A72576673E000531EC /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		DC61A3A82576673E000531EC /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		DC61A3A92576673F000531EC /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		DC61A3AA2576673F000531EC /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		DC61A3AB25766740000531EC /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
+		DC61A3B225767214000531EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DC61A3BE25768369000531EC /* ARViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewExtension.swift; sourceTree = "<group>"; };
+		DC61A3C5257686F2000531EC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				D843061B1FDCD417005FCEAB /* AppDelegate.swift */,
-				D843061D1FDCD417005FCEAB /* ViewController.swift */,
-				D57FA1DD25727F51001CF5D1 /* Utilities.swift */,
-				D843061F1FDCD417005FCEAB /* Main.storyboard */,
-				D843062F1FDCE9C4005FCEAB /* Models.scnassets */,
+				DC61A3C4257686C6000531EC /* Views */,
+				DC61A3B225767214000531EC /* Model.swift */,
+				DC61A3A62576672F000531EC /* Models */,
+				DC61A3BD25768344000531EC /* Extensions */,
 				D84306221FDCD417005FCEAB /* Assets.xcassets */,
 				D84306241FDCD417005FCEAB /* LaunchScreen.storyboard */,
 				D84306271FDCD417005FCEAB /* Info.plist */,
-				D843062D1FDCDF23005FCEAB /* itemCell.swift */,
 			);
 			path = "AR-Furnishing";
+			sourceTree = "<group>";
+		};
+		DC61A3A62576672F000531EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC61A3A72576673E000531EC /* chair_swan.usdz */,
+				DC61A3A82576673E000531EC /* cup_saucer_set.usdz */,
+				DC61A3A92576673F000531EC /* fender_stratocaster.usdz */,
+				DC61A3AA2576673F000531EC /* flower_tulip.usdz */,
+				DC61A3AB25766740000531EC /* tv_retro.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC61A3BD25768344000531EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC61A3BE25768369000531EC /* ARViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC61A3C4257686C6000531EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC61A3A225766213000531EC /* ContentView.swift */,
+				DC61A3C5257686F2000531EC /* ARViewContainer.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +168,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC61A3B025766740000531EC /* tv_retro.usdz in Resources */,
 				D84306261FDCD417005FCEAB /* LaunchScreen.storyboard in Resources */,
+				DC61A3AF25766740000531EC /* flower_tulip.usdz in Resources */,
+				DC61A3AE25766740000531EC /* fender_stratocaster.usdz in Resources */,
 				D84306231FDCD417005FCEAB /* Assets.xcassets in Resources */,
-				D84306211FDCD417005FCEAB /* Main.storyboard in Resources */,
-				D84306301FDCE9C4005FCEAB /* Models.scnassets in Resources */,
+				DC61A3AD25766740000531EC /* cup_saucer_set.usdz in Resources */,
+				DC61A3AC25766740000531EC /* chair_swan.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,24 +185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D843061E1FDCD417005FCEAB /* ViewController.swift in Sources */,
-				D843062E1FDCDF23005FCEAB /* itemCell.swift in Sources */,
-				D57FA1DE25727F51001CF5D1 /* Utilities.swift in Sources */,
+				DC61A3A325766213000531EC /* ContentView.swift in Sources */,
+				DC61A3BF25768369000531EC /* ARViewExtension.swift in Sources */,
+				DC61A3B325767214000531EC /* Model.swift in Sources */,
 				D843061C1FDCD417005FCEAB /* AppDelegate.swift in Sources */,
+				DC61A3C6257686F2000531EC /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D843061F1FDCD417005FCEAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D84306201FDCD417005FCEAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D84306241FDCD417005FCEAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -223,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -274,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -289,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LH3SGQZ2M;
 				INFOPLIST_FILE = "$(SRCROOT)/AR-Furnishing/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "absentor.arkit-furnishing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LH3SGQZ2M;
 				INFOPLIST_FILE = "$(SRCROOT)/AR-Furnishing/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "absentor.arkit-furnishing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
