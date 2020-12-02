@@ -10,6 +10,11 @@
 		D843061C1FDCD417005FCEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843061B1FDCD417005FCEAB /* AppDelegate.swift */; };
 		D84306231FDCD417005FCEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84306221FDCD417005FCEAB /* Assets.xcassets */; };
 		D84306261FDCD417005FCEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84306241FDCD417005FCEAB /* LaunchScreen.storyboard */; };
+		DC36BC3C257827BB0038D885 /* rustic_stand.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC36BC39257827B80038D885 /* rustic_stand.usdz */; };
+		DC36BC3E257827BB0038D885 /* nightstand.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC36BC3B257827BB0038D885 /* nightstand.usdz */; };
+		DC36BC4625782AD80038D885 /* armchair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC36BC4525782AD80038D885 /* armchair.usdz */; };
+		DC36BC4E25782AEC0038D885 /* simple_table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC36BC4B25782AEC0038D885 /* simple_table.usdz */; };
+		DC36BC5325782F1E0038D885 /* ModelEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36BC5225782F1E0038D885 /* ModelEntityExtension.swift */; };
 		DC61A3A325766213000531EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61A3A225766213000531EC /* ContentView.swift */; };
 		DC61A3AC25766740000531EC /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3A72576673E000531EC /* chair_swan.usdz */; };
 		DC61A3AD25766740000531EC /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DC61A3A82576673E000531EC /* cup_saucer_set.usdz */; };
@@ -31,6 +36,11 @@
 		D84306221FDCD417005FCEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84306251FDCD417005FCEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84306271FDCD417005FCEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC36BC39257827B80038D885 /* rustic_stand.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = rustic_stand.usdz; sourceTree = "<group>"; };
+		DC36BC3B257827BB0038D885 /* nightstand.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = nightstand.usdz; path = ../../../../../Downloads/nightstand.usdz; sourceTree = "<group>"; };
+		DC36BC4525782AD80038D885 /* armchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = armchair.usdz; sourceTree = "<group>"; };
+		DC36BC4B25782AEC0038D885 /* simple_table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = simple_table.usdz; sourceTree = "<group>"; };
+		DC36BC5225782F1E0038D885 /* ModelEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEntityExtension.swift; sourceTree = "<group>"; };
 		DC61A3A225766213000531EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC61A3A72576673E000531EC /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		DC61A3A82576673E000531EC /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
@@ -91,6 +101,10 @@
 		DC61A3A62576672F000531EC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC36BC4B25782AEC0038D885 /* simple_table.usdz */,
+				DC36BC4525782AD80038D885 /* armchair.usdz */,
+				DC36BC3B257827BB0038D885 /* nightstand.usdz */,
+				DC36BC39257827B80038D885 /* rustic_stand.usdz */,
 				DC61A3A72576673E000531EC /* chair_swan.usdz */,
 				DC61A3A82576673E000531EC /* cup_saucer_set.usdz */,
 				DC61A3A92576673F000531EC /* fender_stratocaster.usdz */,
@@ -104,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				DC61A3BE25768369000531EC /* ARViewExtension.swift */,
+				DC36BC5225782F1E0038D885 /* ModelEntityExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -181,11 +196,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC36BC3C257827BB0038D885 /* rustic_stand.usdz in Resources */,
 				DC61A3B025766740000531EC /* tv_retro.usdz in Resources */,
 				D84306261FDCD417005FCEAB /* LaunchScreen.storyboard in Resources */,
 				DC61A3AF25766740000531EC /* flower_tulip.usdz in Resources */,
 				DC61A3AE25766740000531EC /* fender_stratocaster.usdz in Resources */,
+				DC36BC4E25782AEC0038D885 /* simple_table.usdz in Resources */,
 				D84306231FDCD417005FCEAB /* Assets.xcassets in Resources */,
+				DC36BC3E257827BB0038D885 /* nightstand.usdz in Resources */,
+				DC36BC4625782AD80038D885 /* armchair.usdz in Resources */,
 				DC61A3AD25766740000531EC /* cup_saucer_set.usdz in Resources */,
 				DC61A3AC25766740000531EC /* chair_swan.usdz in Resources */,
 			);
@@ -202,6 +221,7 @@
 				DC61A3BF25768369000531EC /* ARViewExtension.swift in Sources */,
 				DC61A4512577C4B6000531EC /* Blur.swift in Sources */,
 				DC61A3CB2576C3B5000531EC /* ExportView.swift in Sources */,
+				DC36BC5325782F1E0038D885 /* ModelEntityExtension.swift in Sources */,
 				DC61A3B325767214000531EC /* Model.swift in Sources */,
 				DC61A40F2576D5D6000531EC /* PreviewARView.swift in Sources */,
 				D843061C1FDCD417005FCEAB /* AppDelegate.swift in Sources */,

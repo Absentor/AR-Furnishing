@@ -18,7 +18,7 @@ class Model {
     
     init(name: String) {
         self.name = name
-        self.thumbnail = UIImage(named: name)!
+        self.thumbnail = UIImage(named: name) ?? UIImage(named: "placeholder")!
         
         let filename = name + ".usdz"
         self.cancellable = ModelEntity.loadModelAsync(named: filename)

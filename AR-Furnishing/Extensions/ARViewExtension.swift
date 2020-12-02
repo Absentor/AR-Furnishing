@@ -12,6 +12,7 @@ import ARKit
 extension ARView {
     func enableObjectRemoval() {
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(recognizer:)))
+        longPressGestureRecognizer.minimumPressDuration = 0.5
         
         self.addGestureRecognizer(longPressGestureRecognizer)
     }

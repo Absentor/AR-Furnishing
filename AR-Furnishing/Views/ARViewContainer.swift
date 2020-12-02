@@ -21,7 +21,6 @@ struct ARViewContainer: UIViewRepresentable {
         config.environmentTexturing = .automatic
         
         let previewAnchor = AnchorEntity(plane: .horizontal)
-        previewAnchor.name = "PreviewAnchor"
         
         arView.scene.addAnchor(previewAnchor)
         arView.previewAnchor = previewAnchor
@@ -36,6 +35,8 @@ struct ARViewContainer: UIViewRepresentable {
 
     func updateUIView(_ uiView: PreviewARView, context: Context) {
         if let model = selectedModel, let modelEntity = model.entity?.clone(recursive: true) {
+            modelEntity.fixScale(for: model.name)
+            
             uiView.previewAnchor?.addChild(modelEntity)
         } else {
             uiView.previewAnchor?.children.removeAll()
@@ -47,9 +48,12 @@ struct ARViewContainer: UIViewRepresentable {
                     print("Adding model: \(model.name)")
                     
                     let anchorEntity = AnchorEntity(plane: .horizontal)
+                    
+                    modelEntity.fixScale(for: model.name)
+                    
                     anchorEntity.addChild(modelEntity)
                     
-                    uiView.installGestures([.translation, .rotation], for: modelEntity)
+                    uiView.installGestures([.translation, .rotation, .scale], for: modelEntity)
                     
                     uiView.scene.addAnchor(anchorEntity)
                 }
