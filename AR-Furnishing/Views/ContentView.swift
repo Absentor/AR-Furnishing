@@ -49,6 +49,8 @@ struct ModelPickerView: View {
     @Binding var modelPlacementEnabled: Bool
     @Binding var selectedModel: Model?
     
+    @ObservedObject var device = Device()
+    
     var models: [Model]
     
     var body: some View {
@@ -58,12 +60,11 @@ struct ModelPickerView: View {
                 NavigationLink(destination: ExportView()) {
                     Text("Export")
                         .font(.body)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color("primaryTextColor"))
                         .padding(6)
                 }
-                .background(Color.black.opacity(0.5))
+                .background(Blur(style: .regular))
                 .cornerRadius(12)
-                .padding(6)
             }
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -80,14 +81,18 @@ struct ModelPickerView: View {
                                 .aspectRatio(1/1, contentMode: .fit)
                                 .background(Color.white)
                                 .cornerRadius(12)
+                                .rotationEffect(device.getImageOrientationAngle())
+                                .animation(Animation.easeInOut)
                         }
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .padding(12)
             }
-            .background(Color.black.opacity(0.5))
+            .background(Blur(style: .regular))
+            .cornerRadius(20)
         }
+        .padding(6)
     }
 }
 
