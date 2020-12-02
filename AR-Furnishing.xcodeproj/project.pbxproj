@@ -37,7 +37,7 @@
 		D84306251FDCD417005FCEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84306271FDCD417005FCEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC36BC39257827B80038D885 /* rustic_stand.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = rustic_stand.usdz; sourceTree = "<group>"; };
-		DC36BC3B257827BB0038D885 /* nightstand.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = nightstand.usdz; path = ../../../../../Downloads/nightstand.usdz; sourceTree = "<group>"; };
+		DC36BC3B257827BB0038D885 /* nightstand.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nightstand.usdz; sourceTree = "<group>"; };
 		DC36BC4525782AD80038D885 /* armchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = armchair.usdz; sourceTree = "<group>"; };
 		DC36BC4B25782AEC0038D885 /* simple_table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = simple_table.usdz; sourceTree = "<group>"; };
 		DC36BC5225782F1E0038D885 /* ModelEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEntityExtension.swift; sourceTree = "<group>"; };
